@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./OnTapBai2.css" type="text/css">
+    
+    <title>Ôn tập bài 2</title>
+</head>
+
+<body>
+    <div id="khungtrang">
+        <div id="header"></div>
+        <div id="main">
+            <div id="left">
+                <h3>BÀI GIẢNG</h3>
+                <ul>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">PHP-MySQL</a></li>
+                </ul>
+                <h3>BÀI TẬP</h3>
+                <ul>
+                    <li><a href="">Bài tập số 1</a></li>
+                    <li><a href="">Bài tập số 2</a></li>
+                    <li><a href="">Bài tập số 3</a></li>
+                    <li><a href="">Bài tập số 4</a></li>
+                    <li><a href="">Bài tập số 5</a></li>
+                    <li><a href="">Bài tập số 6</a></li>
+                    <li><a href="">Bài tập số 7</a></li>
+                </ul>
+                <h3>THAM KHẢO</h3>
+                <ul>
+                    <li><a href="www.w3schools.com">www.w3schools.com</a></li>
+                    <li><a href="www.w3.org">www.w3.org</a></li>
+                    <li><a href="www.php.org">www.php.org</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <script src="./OnTapBai2.js"></script>
+                <table>
+                    <form method="post" action="">
+                        <tr>
+                            <th colspan="3">THÔNG BÁO MỚI</th>
+                        </tr>
+                        <tr>
+                            <td>Ngày đăng</td>
+                            <td class="mid"><input type="text" id="ngaydang"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tiêu đề</td>
+                            <td class="mid"><input type="text" id="tieude"></td>
+                            <td>*</td>
+                        </tr>
+                        <tr>
+                            <td>Nội dung</td>
+                            <td class="mid">
+
+                                <textarea name="" id="noidung" cols="22" rows="10"></textarea>
+
+                            </td>
+                            <td>*</td>
+                        </tr>
+                        <tr>
+                            <td>Người gửi <br>
+                                (Email)</td>
+                            <td class="mid"><input type="email" id="Email"></td>
+                            <td>*</td>  
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center" class="check"><input type="submit" value="Gửi" onclick="return validate(),alert('Gửi thành công') "><input
+                                    type="reset" value="Hủy"></td>
+
+                        </tr>
+                    </form>
+                </table>
+            </div>
+            <div id="right">
+                <p>THÔNG BÁO</p>
+                <div class="thongbao">
+                    <p class="tieude">Khẩn! Kiểm tra <hr/></p>
+                    <p class="ngaydang">27/09/2012 07:30</p>
+                    <p class="noidung">Kiểm tra môn LT Web vào chiều ngày 06/10, phòng MT05. Nhóm 1 bắt đầu lúc 13g30,
+                        nhóm 2 bắt đầu lúc 15g00 (mỗi nhóm 40SV, chia theo thứ tự trong danh sách lớp).</p>
+                    <p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+                </div>
+                <div class="thongbao">
+                    <p class="tieude">Đổi buổi thực hành <hr/></p>
+                    <p class="ngaydang">26/09/2012 17:15</p>
+                    <p class="noidung">Thứ bảy tuần này phòng máy bận thi, buổi thực hành sáng thứ bảy sẽ dời sang sáng
+                        thứ sáu.</p>
+                    <p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+                </div>
+                <div class="thongbao">
+                    <p class="tieude">Địa chỉ download bài tập <hr/></p>
+                    <p class="ngaydang">23/08/2012 15:45</p>
+                    <p class="noidung">Các bạn có thể download tài liệu học tập tại <a
+                            href="http://www.mediafire.com/?gl6hfz1agkdxc">đây</a></p>
+                    <p class="email"><a href="mailto:">ltruong@gmail.com</a></p>
+                </div>
+                <p><a href="#">Xem thêm</a></p>
+            </div>
+            <div id="footer">
+                Trang web môn học LT Web <br>
+                Trường ĐH An Giang
+            </div>
+        </div>
+</body>
+
+</html>
