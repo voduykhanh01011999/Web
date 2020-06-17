@@ -1,0 +1,26 @@
+<html xmlns=”http://www.w3.org/1999/xhtml”&gt;
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+<title>Demo javascript</title>
+
+<script src="./Text.js"></script>
+</head>
+<body>
+<form id="form1" name="form1" method="post" action="">
+<label>Năm:
+<select name="ddlNam"id="ddlNam" onchange="loadDay()">
+</select>
+</label>
+<label>Tháng:
+<select name="ddlThang" id="ddlThang" onchange="loadDay()">
+</select>
+</label>
+<label>Ngày:
+<select name="ddlNgay" id="ddlNgay">
+</select>
+</label>
+<br/>
+<input type="button" value="Click" onclick="loadYear(); loadMonth(); loadDay()"/>
+</form>
+</body>
+</html>

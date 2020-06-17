@@ -53,92 +53,144 @@
                         <a href="">Quạt</a>
                     </li>
                 </ul>
+               
+                    <img src="./hinhanh/h3.jpg" alt="">
+                <img src="./hinhanh/h4.jpg" alt="">
+                
+                
             </div>
             <div id="content">
-                <table>
-                    <form method="post" action="">
+                <script src="./OnTapBai3.js"></script>
+                <table class="bang">
+                    <form method="post" action="" name="f">
                         <tr>
-                            <td colspan="3">
-                                <h3>PHIẾU MUA HÀNG TRẢ GÓP</h3>
+                            <td colspan="2">
+                                <h3 class="cotdau">PHIẾU MUA HÀNG TRẢ GÓP</h3>
                             </td>
                         </tr>
                         <tr>
                             <th class="noidung">Ngày</th>
-                            <th><input type="text" class="ngaydang"></th>
-                            <th></th>
+                            <th ><input type="text" class="text" name="txtnhapngay" onchange="LoadNgay()"></th>
+                            
                         </tr>
                         <tr>
-                            <th colspan="3"></th>
+                            <th colspan="2"></th>
                         </tr>
                         <tr>
-                            <th colspan="3">
+                            <th colspan="2">
                                 <h4 class="tieude">THÔNG TIN SẢN PHẨM</h4>
                             </th>
                         </tr>
                         <tr>
                             <th class="noidung">Chọn sản phẩm</th>
-                            <th> <select name="" id="">
-                                    <option value="" selected>Máy giặt Toshiba6.5kg</option>
-                                    <option value="">Máy lạnh samsung</option>
-                                    <option value="">Tủ lạnh LG</option>
-                                    <option value="">Tivi sony</option>
+                            <th > <select   class="text" name="optsanpham">
+                                    <option  value="Máy giặt Toshiba6.5kg"  >Máy giặt Toshiba6.5kg</option>
+                                    <option value="Máy lạnh samsung">Máy lạnh sam sung</option>
+                                    <option value="Tủ lạnh LG" >Tủ lạnh LG</option>
+                                    <option value="Tivi sony" > Tivi sony</option>
                                 </select>
                             </th>
-                            <th></th>
+                            
                         </tr>
                         <tr>
                             <th class="noidung">Thời hạn trả</th>
-                            <th><input type="radio" value="0" name="sothang" checked>6 tháng <input type="radio"
-                                    name="sothang" value="1">12 tháng</th>
-                            <th></th>
+                            <th><input class="text" type="radio" value="1" name="sothang" checked>6 tháng <input type="radio"
+                                    name="sothang" value="2">12 tháng</th>
+                            
                         </tr>
                         <tr>
-                            <th colspan="3">
-                                <input type="checkbox" value="">Giao hàng tận nơi
+                            <th></th>
+                            <th>
+                                <input class="text" type="checkbox" name="checkbox" value="">Giao hàng tận nơi
                             </th>
                         </tr>
                         <tr>
-                            <th colspan="3" id="thanhtieude">
+                            <th colspan="2" id="thanhtieude">
                                 <h4 class="tieude">THÔNG TIN KHÁCH HÀNG</h4>
                             </th>
                         </tr>
                         <tr>
                             <th class="noidung">Họ tên</th>
-                            <th><input type="text" id="nhaphoten"></th>
-                            <th>*</th>
+                            <th><input type="text" id="nhaphoten" name="txtnhaphoten" class="text"></th>
+                            
                         </tr>
                         <tr>
                             <th class="noidung">Năm sinh</th>
-                            <th><select name="" id="">
-                                    <option value="">--Chọn--</option>
-                                </select></th>
-                            <th></th>
+                            <th><input type="number" name="dayso" min="1970" max="2020">
+                                </th>
+                            
                         </tr>
                         <tr>
                             <th class="noidung">Điện thoại</th>
-                            <th><input type="tel" id="sodienthoai"></th>
-                            <th>*</th>
+                            <th><input type="tel" id="sodienthoai" name="txtsodienthoai" class="text"></th>
+                            
                         </tr>
                         <tr>
                             <th class="noidung">Email</th>
-                            <th><input type="email" id="Email"></th>
-                            <th></th>
+                            <th><input type="email" id="Email" name="txtnhapgmail"class="text"></th>
+                            
                         </tr>
                         <tr>
                             <th class="noidung">Địa chỉ</th>
-                            <th><textarea name="" id="" cols="30" rows="5"></textarea></th>
-                            <th></th>
+                            <th><textarea name="tanoidung" id="" cols="30" rows="5" class="text"></textarea></th>
+                            
                         </tr>
                         <tr>
-                            <th colspan="3"><input type="submit" value="Xác nhận" onclick="" ><input type="reset" value="Không"></th>
+                            <th colspan="2" class="kiemtra"><input type="submit" value="Xác nhận" onclick="return validate(),ktgmail(),cuaso()"  ><input type="reset" value="Không" ></th>
+                        </tr>
+                        <tr>
+                            <th class="hinhanh" colspan="2">
+                            <img src="./hinhanh/quangcao.gif" class="img-responsive" alt="Image">
+                            </th>
                         </tr>
                     </form>
                 </table>
             </div>
-            <div id="right"></div>
+            <div id="right">
+                <div id="thongbao">
+                    <p class="hinhanh"> 
+                    <img src="./hinhanh/gg_banui.jpg" class="img-responsive" alt="Image">
+                    </p>
+                    <p class="noidung">GOLDSUN <br>
+                        DW-GKY1200</p>
+                    <p class="sotien1"><del>299.000</del></p>
+                    <p class="sotien2">149.000</p>
+                </div>
+                <div id="thongbao">
+                    <p class="hinhanh"><img src="./hinhanh/gg_maygiat.jpg" alt=""></p>
+                    <p class="noidung">PANASONIC <br> DH-3JL1-V</p>
+                    <p class="sotien1"><del>2.290.000</del></p>
+                    <p class="sotien2">1.599.000</p>
+                </div>
+                <div id="thongbao">
+                    <p class="hinhanh"><img src="./hinhanh/gg_nuocnong.jpg" alt=""></p>
+                    <p class="noidung">SAMSUNG <br> WF1752WQR/XSV</p>
+                    <p class="sotien1"><del>8.990.000</del></p>
+                    <p class="sotien2">7.999.000</p>
+                </div>
+            </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="chu">
+            Cửa hàng điện gia dụng GIA KHANG - Chuyên cung cấp mặt hàng của các nhãn hiệu hàng đàu thế giới. <br>
+        </div>
+        <div class="hinhanh">
+            <a href="">
+            <img src="./hinhanh/panasonic.png" class="img-responsive" alt="Image">
+            </a>
+            <a href=""><img src="./hinhanh/philips.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/samsung.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/sanyo.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/sanyo.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/sharp.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/sony.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/toshiba.png" class="img-responsive" alt="Image"></a>
+          <a href=""><img src="./hinhanh/lg.png" class="img-responsive" alt="Image"></a>
+            <a href=""><img src="./hinhanh/blacker.png" class="img-responsive" alt="Image"></a>
+            </div>
+        </div>
     </div>
+
 
 </body>
 
